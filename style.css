@@ -216,8 +216,8 @@ section .location {
   padding: 0;
 }
 
-#header > #profiles,
-#header > #contact,
+#header > #vitals > #profiles,
+#header > #vitals > #contact,
 #skills,
 #languages,
 #interests {
@@ -232,11 +232,16 @@ section .location {
   justify-content: flex-start;
 }
 
-#header > div {
+#header {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+#header > #vitals > div {
   line-height: 1.5;
 }
 
-#header > div > div {
+#header > #vitals > div > div {
   margin-right: 1.2em;
 }
 
@@ -258,10 +263,15 @@ section .location {
   border-radius: 4px;
 }
 
-.main-summary {
-  background: #f1f8ff;
-  padding: 1.2em 1em;
-  margin-top: 1rem;
+#header > .main-summary {
+  flex: 1 1 auto;
+  max-width: 60%;
+  margin-left: auto;
+}
+
+#header > #vitals {
+  flex: 0 0 auto;
+  max-width: 45%;
 }
 
 .main-summary p {
