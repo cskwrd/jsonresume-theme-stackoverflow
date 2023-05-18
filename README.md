@@ -62,6 +62,8 @@ example of the extra `birth` object:
 }
 ```
 
+You can also add `hideSummary` to 'work' items. Giving it a truthy value, hide the summary for that item. This is useful if the summary makes the resume too long.
+
 ## Contribution
 
 Fork the project, add your feature (or fix your bug) and open a pull request OR

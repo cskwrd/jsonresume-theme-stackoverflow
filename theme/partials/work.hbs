@@ -9,9 +9,11 @@
     <section class="work-item">
       {{#if name}}
 
+      {{#unless hideSummary}}
       {{#if summary}}
       <label for="work-item-{{@index}}"></label>
       {{/if}}
+      {{/unless}}
 
       <header class="clear">
         <div class="date">
@@ -47,9 +49,11 @@
       </ul>
       {{/if}}
       <div class="item" id="work-item">
+        {{#unless hideSummary}}
         {{#if summary}}
         <div class="summary">{{paragraphSplit summary}}</div>
         {{/if}}
+        {{/unless}}
         {{#if highlights.length}}
         <ul class="highlights">
           {{#each highlights}}
